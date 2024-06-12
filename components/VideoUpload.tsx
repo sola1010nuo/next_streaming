@@ -55,6 +55,8 @@ function VideoUpload() {
         </div>
       </form>
       <button onClick={handleSubmit}>Upload video</button>
+      <br />
+      <br />
     </div>
   );
 }

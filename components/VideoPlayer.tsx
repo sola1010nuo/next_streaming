@@ -1,5 +1,6 @@
-function VideoPlayer({ id }: { id: string }) {
+function VideoPlayer({ id, name }: { id: string , name: string}) {
   return (
+    <div>
     <video
       src={`/api/videos?videoId=${id}`}
       width="800px"
@@ -8,6 +9,8 @@ function VideoPlayer({ id }: { id: string }) {
       autoPlay
       id="video-player"
     />
+    <h1>{name}</h1>
+    </div>
   );
 }
 
